@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/resposnive.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <input
+          type="text"
+          id="search-bar"
+          class="search-bar"
+          placeholder="Search..."
+        />
+      </div>
+    </div>
+    <div class="container">
+      <h1>Students KPI</h1>
+      <div class="contacts__header">
+        <p>Name</p>
+        <p>Last name</p>
+        <p>Phone number</p>
+        <p>Weekly KPI</p>
+        <p>Monthly KPI</p>
+      </div>
+      <div class="contacts"></div>
+    </div>
+
+    <div class="btn_add-wrapper">
+      <img id="open-modal-add" src="./img/plus.png" />
+    </div>
+    <div class="modal-add">
+      <h2>Add student</h2>
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="lastName" placeholder="Last Name" />
+      <input type="text" id="phoneNumber" placeholder="Phone number" />
+      <input type="text" id="weeklyKPI" placeholder="Weekly KPI" />
+      <input type="text" id="monthlyKPI" placeholder="Monthly KPI" />
+      <button id="btn_add">Save</button>
+    </div>
+    <div class="modal-edit">
+      <h2>Edit student</h2>
+      <input type="text" id="name_edit" placeholder="Name" />
+      <input type="text" id="lastName_edit" placeholder="Last Name" />
+      <input type="text" id="phoneNumber_edit" placeholder="Phone number" />
+      <input type="text" id="weeklyKPI_edit" placeholder="Weekly KPI" />
+      <input type="text" id="monthlyKPI_edit" placeholder="Monthly KPI" />
+      <button id="btn-save">Save</button>
+    </div>
+    <div id="background"></div>
+    <div class="pagination-buttons">
+      <img id="previous" src="./img/previous.png" />
+      <img id="next" src="./img/skip.png" />
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

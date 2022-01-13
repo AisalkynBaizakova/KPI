@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.search-bar {
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.header {
+  height: 50px;
+  background-color: rgb(150, 57, 57);
+  margin-bottom: 70px;
+}
+
+.contacts__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  height: 70px;
+  background-color: rgb(123, 46, 46);
+  color: #fff;
+}
+.contacts__header p {
+  width: 20%;
+  text-align: center;
+}
+
+#open-modal-add {
+  width: 80px;
+  height: 80px;
+}
+
+.btn_add-wrapper {
+  position: fixed;
+  right: 10%;
+  bottom: 1%;
+  z-index: 10;
+}
+
+.btn-edit {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-delete {
+  width: 20px;
+  height: 20px;
+}
+
+.student {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.modal-edit,
+.modal-add {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: rgb(150, 57, 57);
+}
+
+.modal-edit.active,
+.modal-add.active {
+  display: flex;
+  flex-flow: column;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-edit input,
+.modal-add input {
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+}
+
+.modal-edit button,
+.modal-add button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+img {
+  cursor: pointer;
+}
+#next,
+#previous {
+  width: 30px;
+}
+h2 {
+  color: #fff;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 30%;
+}
+
+.student {
+  display: flex;
+  flex-flow: column;
+  border-top: 0;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.btn-edit,
+.btn-delete {
+  margin: 20px 20px 0 0;
+  float: right;
+}
+
+.btn-delete {
+  margin: 0 20px 20px 0;
+}
+
+.student-info {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.student-info p {
+  width: 20%;
+  text-align: center;
+}
+
+.pagination-page {
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+#background {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+#background.active {
+  display: block;
+}
